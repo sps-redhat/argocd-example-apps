@@ -35,9 +35,9 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: backend
-#  annotations:
-#    argocd.argoproj.io/hook: Sync
-#    argocd.argoproj.io/sync-wave: "0"
+  annotations:
+    argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   replicas: 1
   selector:
